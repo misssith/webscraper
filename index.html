@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src='imdb_output.js'></script>
+    <script type ="text/javascript">
+    function load_imdb_images() {
+      var div = document.getElementById('data');
+
+        for(var i = O; i< imdb_output.length; i++) {
+        var img = "<img class = 'tile' src='" + imdb_output[i] + "'>";
+        div.innerHTML = div.innerHTML + img;
+  }
+}
+</script>
+</head>
+<body onload="load_imdb_images()">
+  <div id="data">
+  </div>
+  </body>
+</html>
