@@ -43,7 +43,7 @@ app.get('/imdb', function (req, res){
       $('.lister').filter(function(){
         $(this).find('tr').each(function(i, element)  {
 
-          imdb_data[i] = "" +  $(this).find('img').attr('src') + "";
+          imdb_data[i] = "'" +  $(this).find('img').attr('src') + "'";
         });
       });
 
